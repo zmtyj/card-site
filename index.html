@@ -3,72 +3,122 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>张明远 - 个人名片</title>
+<title>邓倩玉 — 个人名片</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27><text y=%2728%27 font-size=%2728%27>🌺</text></svg>">
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  :root {
-    --bg: #f8f9fa; --card-bg: #ffffff; --primary: #1a1a2e; --accent: #3b82f6;
-    --text: #374151; --text-muted: #6b7280; --border: #e5e7eb;
-    --shadow: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
-  }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
-    background: var(--bg); color: var(--text); min-height: 100vh;
-    display: flex; align-items: center; justify-content: center; padding: 24px; line-height: 1.6;
-  }
-  .card { background: var(--card-bg); border-radius: 12px; box-shadow: var(--shadow); max-width: 480px; width: 100%; overflow: hidden; border: 1px solid var(--border); }
-  .card-header { background: var(--primary); padding: 40px 32px 32px; text-align: center; color: #ffffff; }
-  .avatar { width: 96px; height: 96px; border-radius: 50%; border: 3px solid rgba(255,255,255,.3); margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,.1); font-size: 40px; color: rgba(255,255,255,.7); }
-  .name { font-size: 28px; font-weight: 700; letter-spacing: 2px; margin-bottom: 4px; }
-  .title { font-size: 15px; opacity: .85; }
-  .company { font-size: 13px; opacity: .7; margin-top: 4px; }
-  .card-body { padding: 28px 32px 32px; }
-  .section-title { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-muted); margin-bottom: 12px; font-weight: 600; }
-  .contact-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
-  .contact-item { display: flex; align-items: center; gap: 12px; font-size: 15px; color: var(--text); text-decoration: none; padding: 8px 0; border-bottom: 1px solid var(--border); transition: color .15s; }
-  .contact-item:last-child { border-bottom: none; }
-  a.contact-item:hover { color: var(--accent); }
-  .contact-icon { width: 36px; height: 36px; border-radius: 8px; background: #f3f4f6; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 16px; }
-  .contact-label { font-size: 11px; color: var(--text-muted); font-weight: 500; }
-  .contact-value { font-size: 15px; }
-  .card-footer { background: #f9fafb; padding: 20px 32px; border-top: 1px solid var(--border); display: flex; gap: 12px; justify-content: center; }
-  .btn { display: inline-flex; align-items: center; gap: 6px; padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; border: none; cursor: pointer; transition: all .15s; }
-  .btn-primary { background: var(--accent); color: #fff; }
-  .btn-primary:hover { background: #2563eb; }
-  .btn-outline { background: transparent; color: var(--primary); border: 2px solid var(--border); }
-  .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
-  @media (max-width: 480px) {
-    body { padding: 12px; align-items: flex-start; padding-top: 40px; }
-    .card-header { padding: 32px 20px 24px; }
-    .card-body { padding: 20px; }
-    .card-footer { padding: 16px 20px; flex-direction: column; }
-    .btn { justify-content: center; }
-    .name { font-size: 24px; }
-  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--rose-50:#fff1f2;--rose-100:#ffe4e6;--rose-400:#fb7185;--rose-500:#f43f5e;--rose-600:#e11d48;--slate-50:#f8fafc;--slate-100:#f1f5f9;--slate-200:#e2e8f0;--slate-300:#cbd5e1;--slate-400:#94a3b8;--slate-500:#64748b;--slate-700:#334155;--slate-800:#1e293b;--slate-900:#0f172a;--gold:#b8860b;--gold-light:#d4a853}
+  body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,BlinkMacSystemFont,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px 20px;background:linear-gradient(135deg,#fdf2f4 0%,#f0e6ef 30%,#e8e0f0 60%,#fdf2f4 100%);background-attachment:fixed;color:var(--slate-700);line-height:1.6}
+  body::before{content:"";position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 20% 30%,rgba(251,113,133,.06) 0%,transparent 50%),radial-gradient(ellipse 60% 50% at 80% 70%,rgba(168,85,247,.04) 0%,transparent 50%);pointer-events:none;z-index:0}
+  .card{background:rgba(255,255,255,.85);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-radius:20px;box-shadow:0 4px 6px rgba(0,0,0,.04),0 20px 40px rgba(0,0,0,.06),0 1px 0 rgba(255,255,255,.5) inset;max-width:440px;width:100%;overflow:hidden;border:1px solid rgba(251,113,133,.12);position:relative;z-index:1;transition:transform .3s ease,box-shadow .3s ease}
+  .card:hover{transform:translateY(-2px);box-shadow:0 8px 12px rgba(0,0,0,.05),0 24px 48px rgba(0,0,0,.08),0 1px 0 rgba(255,255,255,.5) inset}
+  .card-header{background:linear-gradient(135deg,#2d1b35 0%,#3b2045 30%,#2d1b35 100%);padding:48px 36px 40px;text-align:center;color:#fff;position:relative;overflow:hidden}
+  .card-header::before{content:"";position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 30% 40%,rgba(251,113,133,.15) 0%,transparent 40%),radial-gradient(circle at 70% 60%,rgba(212,168,83,.1) 0%,transparent 40%);pointer-events:none}
+  .card-header>*{position:relative;z-index:1}
+  .avatar-ring{width:104px;height:104px;border-radius:50%;margin:0 auto 20px;padding:3px;background:linear-gradient(135deg,var(--rose-400),var(--gold-light),var(--rose-400));position:relative}
+  .avatar{width:100%;height:100%;border-radius:50%;background:linear-gradient(135deg,#3b2045,#4a2855);display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .avatar svg{width:56px;height:56px;opacity:.9}
+  .name-row{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:6px}
+  .name{font-size:30px;font-weight:700;letter-spacing:4px;text-shadow:0 1px 2px rgba(0,0,0,.2)}
+  .gender-badge{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:rgba(251,113,133,.2);font-size:13px}
+  .title{font-size:15px;opacity:.8;font-weight:400;letter-spacing:2px}
+  .divider-dot{display:flex;align-items:center;justify-content:center;gap:6px;margin:20px 0 0;opacity:.4}
+  .divider-dot span{width:4px;height:4px;border-radius:50%;background:#fff}
+  .card-body{padding:32px 36px 28px}
+  .contact-grid{display:grid;grid-template-columns:1fr;gap:4px}
+  .contact-item{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:12px;text-decoration:none;color:var(--slate-700);transition:background .2s ease,transform .2s ease;cursor:default}
+  a.contact-item{cursor:pointer}
+  a.contact-item:hover{background:var(--rose-50);transform:translateX(4px)}
+  .contact-icon{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform .2s ease}
+  a.contact-item:hover .contact-icon{transform:scale(1.08)}
+  .contact-icon.phone{background:#fce7f3;color:#db2777}
+  .contact-icon.email{background:#ede9fe;color:#7c3aed}
+  .contact-icon.web{background:#e0f2fe;color:#0284c7}
+  .contact-icon.location{background:#fef3c7;color:#d97706}
+  .contact-icon.wechat{background:#dcfce7;color:#16a34a}
+  .contact-info{flex:1;min-width:0}
+  .contact-label{font-size:11px;color:var(--slate-400);font-weight:600;letter-spacing:.5px;margin-bottom:2px}
+  .contact-value{font-size:15px;font-weight:500;color:var(--slate-800);word-break:break-all}
+  .card-footer{padding:20px 36px 32px;display:flex;gap:12px}
+  .btn{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:14px;font-size:15px;font-weight:600;text-decoration:none;border:none;cursor:pointer;transition:all .2s ease;letter-spacing:.5px}
+  .btn-primary{background:linear-gradient(135deg,#db2777,#e11d48);color:#fff;box-shadow:0 4px 12px rgba(219,39,119,.25)}
+  .btn-primary:hover{box-shadow:0 6px 20px rgba(219,39,119,.35);transform:translateY(-1px)}
+  .btn-outline{background:transparent;color:var(--rose-600);border:2px solid var(--rose-100)}
+  .btn-outline:hover{background:var(--rose-50);border-color:var(--rose-400)}
+  .save-tip{text-align:center;padding:0 36px 28px;font-size:12px;color:var(--slate-400)}
+  .save-tip a{color:var(--rose-500);text-decoration:none;font-weight:600}
+  .save-tip a:hover{text-decoration:underline}
+  @media(max-width:480px){body{padding:20px 12px;align-items:flex-start;padding-top:32px}.card-header{padding:36px 20px 32px}.card-body{padding:24px 20px 20px}.card-footer{padding:12px 20px 24px}.contact-item{padding:12px 12px}.name{font-size:26px;letter-spacing:3px}.avatar-ring{width:90px;height:90px}.avatar svg{width:48px;height:48px}.save-tip{padding:0 20px 20px}}
 </style>
 </head>
 <body>
 <div class="card">
   <div class="card-header">
-    <div class="avatar"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-    <div class="name">张明远</div>
-    <div class="title">高级技术总监</div>
-    <div class="company">远航科技有限公司</div>
+    <div class="avatar-ring">
+      <div class="avatar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="8" r="5"/>
+          <path d="M3 21v-1a7 7 0 0 1 10-5.33M19 21v-1a7 7 0 0 0-9.5-6.37"/>
+          <path d="M8 14c-1.77.8-3.24 2.17-4 4"/>
+          <path d="M15 14c-2.5 1.5-4 3.5-4 7"/>
+        </svg>
+      </div>
+    </div>
+    <div class="name-row">
+      <span class="name">邓倩玉</span>
+      <span class="gender-badge">&#9793;</span>
+    </div>
+    <div class="title">创始人 &amp; 首席执行官</div>
+    <div class="divider-dot"><span></span><span></span><span></span></div>
   </div>
   <div class="card-body">
-    <div class="section-title">联系方式</div>
-    <ul class="contact-list">
-      <li><div class="contact-item"><div class="contact-icon">&#128222;</div><div><div class="contact-label">手机</div><div class="contact-value">+86 138-0000-8888</div></div></div></li>
-      <li><a class="contact-item" href="mailto:zhangmingyuan@example.com"><div class="contact-icon">&#9993;</div><div><div class="contact-label">邮箱</div><div class="contact-value">zhangmingyuan@example.com</div></div></a></li>
-      <li><div class="contact-item"><div class="contact-icon">&#127760;</div><div><div class="contact-label">网站</div><div class="contact-value">www.yuanhang-tech.com</div></div></div></li>
-      <li><div class="contact-item"><div class="contact-icon">&#128205;</div><div><div class="contact-label">地址</div><div class="contact-value">北京市海淀区中关村科技园区</div></div></div></li>
-    </ul>
+    <div class="contact-grid">
+      <a class="contact-item" href="tel:18116637556">
+        <div class="contact-icon phone">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div class="contact-info"><div class="contact-label">手机号码</div><div class="contact-value">181 1663 7556</div></div>
+      </a>
+      <a class="contact-item" href="mailto:dengqianyu@example.com">
+        <div class="contact-icon email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </div>
+        <div class="contact-info"><div class="contact-label">电子邮箱</div><div class="contact-value">dengqianyu@example.com</div></div>
+      </a>
+      <a class="contact-item" href="https://zmtyj.github.io/card-site/" target="_blank" rel="noopener">
+        <div class="contact-icon web">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <div class="contact-info"><div class="contact-label">个人主页</div><div class="contact-value">zmtyj.github.io/card-site</div></div>
+      </a>
+      <a class="contact-item" href="#" id="wechatItem">
+        <div class="contact-icon wechat">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.045c.134 0 .24-.11.24-.245 0-.06-.024-.12-.04-.178l-.325-1.233a.49.49 0 0 1 .177-.554C23.028 18.48 24 16.82 24 14.98c0-3.21-2.931-5.952-7.062-6.122zm-2.18 2.769c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982z"/></svg>
+        </div>
+        <div class="contact-info"><div class="contact-label">微信</div><div class="contact-value">点击查看微信号</div></div>
+      </a>
+      <div class="contact-item">
+        <div class="contact-icon location">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="contact-info"><div class="contact-label">所在城市</div><div class="contact-value">上海</div></div>
+      </div>
+    </div>
   </div>
   <div class="card-footer">
-    <a class="btn btn-primary" href="tel:+8613800008888"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>拨打电话</a>
-    <a class="btn btn-outline" href="#" id="wechatBtn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.045c.134 0 .24-.11.24-.245 0-.06-.024-.12-.04-.178l-.325-1.233a.49.49 0 0 1 .177-.554C23.028 18.48 24 16.82 24 14.98c0-3.21-2.931-5.952-7.062-6.122zm-2.18 2.769c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982z"/></svg>微信名片</a>
+    <a class="btn btn-primary" href="tel:18116637556">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>拨打电话
+    </a>
+    <a class="btn btn-outline" href="#" id="wechatBtn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.045c.134 0 .24-.11.24-.245 0-.06-.024-.12-.04-.178l-.325-1.233a.49.49 0 0 1 .177-.554C23.028 18.48 24 16.82 24 14.98c0-3.21-2.931-5.952-7.062-6.122zm-2.18 2.769c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982z"/></svg>添加微信
+    </a>
   </div>
+  <div class="save-tip">保存至通讯录 &middot; <a href="#" id="saveContact">一键保存名片</a></div>
 </div>
-<script>document.getElementById('wechatBtn').addEventListener('click',function(e){e.preventDefault();alert('微信号: zhangmingyuan_wx\n请备注来意，谢谢！');});</script>
+<script>
+document.getElementById("wechatBtn").addEventListener("click",function(e){e.preventDefault();alert("微信号：DengQianyu_WX\n\n请备注来意，谢谢！")});
+document.getElementById("wechatItem").addEventListener("click",function(e){e.preventDefault();alert("微信号：DengQianyu_WX\n\n请备注来意，谢谢！")});
+document.getElementById("saveContact").addEventListener("click",function(e){e.preventDefault();var v="BEGIN:VCARD\r\nVERSION:3.0\r\nFN:邓倩玉\r\nTEL:18116637556\r\nEND:VCARD";var b=new Blob([v],{type:"text/vcard"});var u=URL.createObjectURL(b);var a=document.createElement("a");a.href=u;a.download="邓倩玉.vcf";a.click();URL.revokeObjectURL(u)});
+</script>
 </body>
 </html>
